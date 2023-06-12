@@ -6,7 +6,7 @@ PATH=/app/node_modules/.bin:$PATH
 if [ $# -eq 0 ]; then
   cd /app/
   npm ci && npm run build
-  npm run db:migrate
+  npm run --workspace=backend migration:run
   npm start
 
 else
