@@ -18,7 +18,10 @@ export default function Home() {
     HTTP.get('/products')
       .then((response: any) => {
         setInitLoading(false);
-        setProducts(response.data);
+        const sortedProducts = response.data.sort((a: Product, b: Product) => {
+          return a.createdAt > b.createdAt ? -1 : 1;
+        });
+        setProducts(sortedProducts);
       });
   }, []);
 
