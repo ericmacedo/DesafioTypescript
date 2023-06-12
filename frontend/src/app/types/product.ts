@@ -4,4 +4,5 @@ export default interface Product {
 	brand: string;
 	price: string;
 	image: string;
+	createdAt: Date;
 }

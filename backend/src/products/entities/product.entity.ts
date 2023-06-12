@@ -16,4 +16,7 @@ export class Product {
 	
 	@Column({ type: 'varchar', length: 300, nullable: false })
 	image: string;
+
+	@Column({ type: 'date', nullable: false, default: 'now()'})
+	createdAt: Date;
 }

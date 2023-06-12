@@ -7,6 +7,7 @@ export default function seeder(n = 100) {
 		description: Faker.commerce.productDescription(),
 		price: Faker.commerce.price(),
 		brand: Faker.commerce.department(),
-		image: Faker.image.urlPlaceholder({ width: 640, height: 480 })
+		image: Faker.image.urlPlaceholder({ width: 640, height: 480 }),
+		createdAt: Faker.date.past()
 	}))
 };
