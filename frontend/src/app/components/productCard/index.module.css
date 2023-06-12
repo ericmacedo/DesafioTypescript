@@ -1,0 +1,49 @@
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+		0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-width: 1px;
+	border-color: black;
+	text-align: left;
+}
+
+.product_image {
+	width: 100%;
+	height: 100%;
+}
+
+.product_name {
+	font-size: 1.1em;
+	text-overflow: ellipsis;
+	direction: ltr;
+}
+
+.product_brand {
+	font-size: 1.0em;
+}
+
+.product_price {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+@media (min-width: 768px) {
+	.card {
+		max-height: 30vh;
+		min-height: 30vh;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.product_name {
+		font-size: 1.1em;
+	}
+
+	.product_brand {
+		font-size: 1.0em;
+	}
+
+	.product_price {
+		font-size: 1.5em;
+	}
+}
