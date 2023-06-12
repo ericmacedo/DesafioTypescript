@@ -6,6 +6,7 @@ services:
     build: ./.docker/
     ports:
       - "${BACKEND_PORT:-3000}:3000"
+      - "${FRONTEND_PORT:-8000}:8000"
     volumes:
       - .:/app
       - ./.docker/entrypoint.sh:/entrypoint.sh
